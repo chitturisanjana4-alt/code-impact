@@ -1683,12 +1683,14 @@ select:focus {
 }
 
 .graph-middle {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 280px 280px;
     justify-content: center;
-    align-items: center;
     gap: 40px;
-
+}
+.graph-middle .service{
+    width: 280px;
+    margin: 14px 0;
 }
 
 .graph-arrow {
