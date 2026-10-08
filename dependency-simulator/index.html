@@ -2602,7 +2602,7 @@ function simulateFailure() {
 
     const selectedService =
         document.getElementById("serviceSelect").value;
-        fetch("http://localhost:8080/api/failure?service=" + encodeURIComponent(selectedService))
+        fetch("https://code-impact-backend.onrender.com/api/failure?service=" + encodeURIComponent(selectedService))
     .then(response => response.json())
     .then(data => console.log("Backend BFS:", data))
     .catch(error => console.error("Backend error:", error));
